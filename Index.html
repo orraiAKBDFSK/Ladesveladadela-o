@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LA GRAN VELADA · VERSIÓN PROVINCIA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark">✕</span>
+    <span class="brand-name">LA GRAN VELADA <em>PROVINCIA</em></span>
+  </div>
+  <nav class="main-nav">
+    <a href="#combates" class="nav-item disabled">COMBATES <small>PRÓXIMAMENTE</small></a>
+    <a href="#participantes" class="nav-item active">BOXEADORES</a>
+    <a href="#pronosticos" class="nav-item disabled">PRONÓSTICOS <small>PRÓXIMAMENTE</small></a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-arc arc-left"></div>
+  <div class="hero-arc arc-right"></div>
+
+  <div class="hero-content">
+    <div class="hero-logo">
+      <span class="hero-x">✕</span>
+      <h1>LA GRAN<span>VELADA</span></h1>
+      <span class="hero-x hero-x-bottom">VERSIÓN PROVINCIA</span>
+    </div>
+
+    <div class="event-info">
+      <p class="event-date">xx DE JULIO</p>
+      <p class="event-time">20:00</p>
+      <p class="event-place">JATO DE ALGUIEN, AYACUCHO</p>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span class="divider"></span>
+    <span class="diamond">◆</span>
+    <span class="divider"></span>
+  </div>
+</section>
+
+<section class="participantes" id="participantes">
+  <h2>¡SELECCIONA TU BOXEADOR!</h2>
+  <div class="grid" id="participants-grid">
+    <!-- Las tarjetas se generan dinámicamente desde script.js -->
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>LA GRAN VELADA · VERSIÓN PROVINCIA · algun dia de julio · La jato de alguien, Ayacucho</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
