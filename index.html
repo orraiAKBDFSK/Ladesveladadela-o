@@ -18,11 +18,14 @@
     <span class="brand-mark">✕</span>
     <span class="brand-name">LA GRAN VELADA <em>PROVINCIA</em></span>
   </div>
-  <nav class="main-nav">
+  <nav class="main-nav" id="main-nav">
     <a href="#combates" class="nav-item disabled">COMBATES <small>PRÓXIMAMENTE</small></a>
     <a href="#participantes" class="nav-item active">BOXEADORES</a>
     <a href="#pronosticos" class="nav-item disabled">PRONÓSTICOS <small>PRÓXIMAMENTE</small></a>
   </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
 <section class="hero">
@@ -37,9 +40,9 @@
     </div>
 
     <div class="event-info">
-      <p class="event-date">xx DE JULIO</p>
-      <p class="event-time">20:00</p>
-      <p class="event-place">JATO DE ALGUIEN, AYACUCHO</p>
+      <p class="event-date">25 DE JULIO</p>
+      <p class="event-time">20:00H CET</p>
+      <p class="event-place">ESTADIO DE LA CARTUJA, SEVILLA</p>
     </div>
   </div>
 
@@ -51,14 +54,14 @@
 </section>
 
 <section class="participantes" id="participantes">
-  <h2>¡SELECCIONA TU BOXEADOR!</h2>
+  <h2>¡SELECCIONA TU BOXEADOR O BOXEADORA!</h2>
   <div class="grid" id="participants-grid">
     <!-- Las tarjetas se generan dinámicamente desde script.js -->
   </div>
 </section>
 
 <footer class="site-footer">
-  <p>LA GRAN VELADA · VERSIÓN PROVINCIA · algun dia de julio · La jato de alguien, Ayacucho</p>
+  <p>LA GRAN VELADA · VERSIÓN PROVINCIA · 25 de julio · Estadio de La Cartuja, Sevilla</p>
 </footer>
 
 <script src="script.js"></script>

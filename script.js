@@ -5,7 +5,7 @@ const participants = [
   { name: "Participante 3",  photo: "images/participantes/3.jpg"  },
   { name: "Participante 4",  photo: "images/participantes/4.jpg"  },
   { name: "Participante 5",  photo: "images/participantes/5.jpg"  },
-  { name: "Participante 6",  photo: "images/participantes/6.jpg"  },
+  { name: "Participante 6",  photo: "images/participantes/6.png"  },
   { name: "Participante 7",  photo: "images/participantes/7.jpg"  },
   { name: "Participante 8",  photo: "images/participantes/8.jpg"  },
   { name: "Participante 9",  photo: "images/participantes/9.jpg"  },
@@ -29,7 +29,6 @@ function renderParticipants() {
 
     if (person.photo) {
       photo.style.backgroundImage = `url("${person.photo}")`;
-      // Si la imagen no existe todavía, mostramos la inicial como respaldo
       const testImg = new Image();
       testImg.onerror = () => {
         photo.style.backgroundImage = "none";
@@ -59,8 +58,8 @@ function selectParticipant(card) {
   const index = card.dataset.index;
   const person = participants[index];
   console.log("Seleccionado:", person.name);
-  // Aquí puedes añadir lo que quieras que pase al elegir a alguien,
-  // por ejemplo mostrar sus datos, redirigir a otra sección, etc.
+  // mostrar datos del participante 
+  // sus datos, redirigir a otra sección, etc.
 }
 
 renderParticipants();
